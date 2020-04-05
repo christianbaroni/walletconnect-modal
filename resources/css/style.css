@@ -59,6 +59,7 @@ body.noscroll {
   border-radius: 24px;
   box-shadow: 0 10px 50px 5px rgba(0,0,0,0.4);
   font-family: ui-rounded,"SF Pro Rounded","SF Pro Text",medium-content-sans-serif-font,-apple-system,BlinkMacSystemFont,ui-sans-serif,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+	margin-top: 41px;
   padding: 24px 24px 22px;
   pointer-events: auto;
   position: relative;
