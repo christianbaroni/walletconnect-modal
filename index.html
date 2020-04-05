@@ -1,0 +1,63 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>CDP Portal</title>
+
+	<link rel=stylesheet href=resources/css/style.css>
+
+	<script src="resources/js/uilang.js"></script>
+	<script src="resources/js/mobileHelper.js"></script>
+</head>
+<body>
+	<div class="background"></div>
+
+  <div class="wc-modal-wrapper">
+		<div class="overlay"></div>
+	  <div class="wc-modal-mobile">
+			<div class="header">
+				<div class="wc-logo">
+					<div></div>
+					<p>WalletConnect</p>
+				</div>
+				<div class="close-button"></div>
+			</div>
+
+			<h2>Choose your preferred wallet</h2>
+
+			<div class="wallet-list">
+				<a class="row">
+						<h3>Gnosis Safe</h3>
+						<div class="right">
+							<div class="app-icon gnosis-safe"></div>
+							<div class="caret"></div>
+						</div>
+				</a>
+
+				<a class="row">
+					<h3>MetaMask</h3>
+					<div class="right">
+						<div class="app-icon metamask"></div>
+						<div class="caret"></div>
+					</div>
+				</a>
+
+				<a class="row">
+					<h3>Rainbow</h3>
+					<div class="right">
+						<div class="app-icon rainbow"></div>
+						<div class="caret"></div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<code>
+    clicking on ".background" toggles class "hidden" on ".overlay, .wc-modal-mobile"
+		clicking on ".background" adds class "noscroll" on "body"
+    clicking on ".overlay, .close-button" toggles class "hidden" on ".overlay, .wc-modal-mobile"
+		clicking on ".overlay, .close-button" removes class "noscroll" on "body"
+	</code>
+</body>
+</html>

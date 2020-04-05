@@ -1,0 +1,226 @@
+html {
+	background: #636875;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body.noscroll {
+  overflow: hidden;
+}
+
+.background {
+  background: #636875;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none !important;
+  transition: .125s cubic-bezier(0.4, 0.0, 1, 1);
+}
+
+.overlay {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+  background: rgba(37, 41, 46, 0.8);
+  height: 100%;
+  left: 0;
+  pointer-events: auto;
+  position: fixed;
+  top: 0;
+  transition: .4s cubic-bezier(0.19, 1, 0.22, 1);
+  width: 100%;
+  will-change: opacity;
+}
+
+.wc-modal-wrapper {
+  -webkit-user-select: none;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  user-select: none;
+  width: 100%;
+}
+
+.wc-modal-mobile {
+  -webkit-font-smoothing: antialiased;
+  background: #FFFFFF;
+  border-radius: 24px;
+  box-shadow: 0 10px 50px 5px rgba(0,0,0,0.4);
+  font-family: ui-rounded,"SF Pro Rounded","SF Pro Text",medium-content-sans-serif-font,-apple-system,BlinkMacSystemFont,ui-sans-serif,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  padding: 24px 24px 22px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  top: 0;
+  transition: .4s cubic-bezier(0.19, 1, 0.22, 1);
+  will-change: transform;
+}
+
+.wc-modal-mobile.hidden {
+  transform: translateY(150%);
+	transition: .125s cubic-bezier(0.4, 0.0, 1, 1);
+}
+
+.wc-modal-mobile .header {
+  align-items: center;
+  display: flex;
+  height: 26px;
+  left: 0;
+  justify-content: space-between;
+  pointer-events: none;
+  position: absolute;
+  top: -41px;
+  width: 100%;
+}
+
+.wc-modal-mobile .wc-logo {
+  align-items: center;
+  display: flex;
+  height: 26px;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  pointer-events: auto;
+}
+
+.wc-modal-mobile .wc-logo div {
+  background: url('images/wc-logo.svg') no-repeat;
+  height: 21px;
+  margin-right: 5px;
+  width: 32px;
+}
+
+.wc-modal-mobile .wc-logo p {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.wc-modal-mobile .close-button {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+  background: url('images/close-button.svg') center no-repeat;
+  cursor: pointer;
+  height: 26px;
+  margin: 0 -15px 0 0;
+  padding: 15px;
+  pointer-events: auto;
+  transition: .12s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  width: 26px;
+	will-change: transform;
+}
+
+.wc-modal-mobile .close-button:hover {
+	opacity: 0.75;
+}
+
+.wc-modal-mobile .close-button:active {
+	opacity: 0.75;
+  transform: scale(0.82);
+}
+
+.wc-modal-mobile.hidden .close-button {
+	opacity: 0 !important;
+	pointer-events: none !important;
+	transform: scale(0);
+}
+
+.wc-modal-mobile h2 {
+  color: rgba(60, 66, 82, 0.6);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.1875em;
+  margin: 0 0 19px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.wc-modal-mobile .row {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+  align-items: center;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  height: 56px;
+  justify-content: space-between;
+  padding: 0 15px;
+  position: relative;
+  margin-bottom: 8px;
+  text-align: left;
+  transition: .15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+}
+
+.wc-modal-mobile .row:hover {
+  background: rgba(60, 66, 82, 0.06);
+}
+
+.wc-modal-mobile .row:active {
+  background: rgba(60, 66, 82, 0.06);
+  transform: scale(0.975);
+  transition: .1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.wc-modal-mobile h3 {
+  color: #25292E;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0 42px 3px 0;
+}
+
+.wc-modal-mobile .right {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.wc-modal-mobile .app-icon {
+  border-radius: 8px;
+  height: 34px;
+  margin: 0 11px 2px 0;
+  width: 34px;
+}
+
+.wc-modal-mobile .rainbow {
+  background: url('images/wallet-rainbow.png') rgb(0, 30, 89);
+  background-size: 100%;
+  box-shadow: 0 4px 12px 0 rgba(0, 30, 89, 0.4);
+}
+
+.wc-modal-mobile .gnosis-safe {
+  background: url('images/wallet-gnosis.png') rgb(0, 140, 115);
+  background-size: 100%;
+  box-shadow: 0 4px 12px 0 rgba(0, 140, 115, 0.4);
+}
+
+.wc-modal-mobile .metamask {
+  background: url('images/wallet-metamask.png');
+  background-size: 100%;
+  box-shadow: 0 4px 12px 0 rgba(37, 41, 46, 0.25);
+}
+
+.wc-modal-mobile .caret {
+  background: url('images/caret.svg') no-repeat;
+  height: 18px;
+  opacity: 0.3;
+  transition: .1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  width: 8px;
+	will-change: opacity;
+}
+
+.wc-modal-mobile .row:hover .caret, .wc-modal-mobile .row:active .caret {
+  opacity: 0.6;
+}
