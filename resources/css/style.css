@@ -178,9 +178,8 @@ body.noscroll {
   color: #25292E;
   font-size: 20px;
   font-weight: 700;
-	height: 26px;
   margin: 0;
-  padding-right: 42px;
+  padding: 0 42px 3px 0;
 }
 
 .wc-modal-mobile .right {
