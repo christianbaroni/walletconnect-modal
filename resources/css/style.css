@@ -96,9 +96,11 @@ body.noscroll {
 }
 
 .wc-modal-mobile .wc-logo div {
-  background: url('images/wc-logo.svg') no-repeat;
+	-webkit-mask: url('images/wc-logo.svg') center no-repeat;
+	background-color: #3399FF;
   height: 21px;
   margin-right: 5px;
+	mask-image: url('images/wc-logo.svg') center no-repeat;
   width: 32px;
 }
 
